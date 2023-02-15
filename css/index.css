@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+html {
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mousemove {
+  text-align: center;
+  width: 160px;
+  height: 160px;
+  border: 1px solid #bb8d8d;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main .grid-area {
+  margin: 0 auto;
+  display: grid;
+  grid-auto-rows: auto;
+  background-color: #191917;
+  color: #f8f8f4;
+}
+main .grid-area .sec1 {
+  position: relative;
+  top: -20vh;
+}
+main .grid-area .sec1 .front-img {
+  position: sticky;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  max-width: 530px;
+  z-index: 1;
+}
+main .grid-area .sec1 .front-img img {
+  width: 100%;
+}
+main .grid-area .sec1 .back-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18vw;
+  text-transform: uppercase;
+  z-index: 0;
+}
+main .grid-area .sec1 .back-text .didot {
+  z-index: 2;
+}
+main .grid-area .sec2 {
+  z-index: 2;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .grid-area .sec2 .basic-txt {
+  margin-bottom: 2.5em;
+}
+main .grid-area .sec2 .basic-txt .underline {
+  background: linear-gradient(#bb8d8d, #bb8d8d) no-repeat 0 100%/100% 2px;
+}
+main .grid-area .sec2 .add-txt {
+  display: none;
+  transition: 0.5s;
+}
+main .grid-area .sec2 .trans-less {
+  color: #bb8d8d;
+}
+main .grid-area .sec3 .front-text {
+  text-align: right;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper {
+  left: 30%;
+  display: flex;
+  align-items: center;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100vh;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper .swiper-slide img {
+  width: 40%;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper .dark {
+  background-color: #191917;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper .light {
+  background-color: #f8f8f4;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper .swip0 {
+  width: 40%;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper .swip0 p {
+  text-align: center;
+  font-size: 20px;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper .swip1 img {
+  width: 40%;
+}
+main .grid-area .sec4 {
+  margin-top: 100px;
+  height: 100vh;
+  position: relative;
+}
+main .grid-area .sec4 .video {
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+main .grid-area .sec4 .video .mousemove {
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 0;
+  transform: translateX(-50%);
+}
+main .grid-area .sec4 .new-text {
+  font-size: 5vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(50%, -50%);
+  z-index: 2;
+}
+main .grid-area .sec4 .col-text {
+  font-size: 5vw;
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translateX(-50%) translateY(-50%);
+}
+main .grid-area .sec4 .col-text:nth-of-type(2) {
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%) translateY(-50%);
+}
+main .grid-area .sec4 .col-text:nth-of-type(3) {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 3;
+}
+main .grid-area .sec5 {
+  display: flex;
+  position: relative;
+}
+main .grid-area .sec5 .concept-left {
+  overflow: hidden;
+  width: 50%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+main .grid-area .sec5 .concept-right {
+  overflow: hidden;
+  width: 50%;
+  padding: 0 55px;
+}
+main .grid-area .sec5 .concept-right .concept-title {
+  text-align: center;
+  font-size: 15vw;
+  margin-bottom: 22.5vw;
+}
+main .grid-area .sec5 .concept-right .txt-mid {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 22.5vw;
+}
+main .grid-area .sec5 .concept-right .txt-bot {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 3vw;
+}
+main .grid-area .sec5 .concept-right a {
+  color: #bb8d8d;
+  margin-bottom: 3vw;
+}
+main .grid-area .sec6 .lab-title {
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+}
+main .grid-area .sec6 .lab-title h2 {
+  font-size: 30vw;
+}
+main .grid-area .sec6 .img-mouse {
+  position: sticky;
+  top: 0;
+  left: 50%;
+  max-width: 530px;
+}
+main .grid-area .sec6 .img-mouse .mousemove {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+main .grid-area .sec6 .lab-mid {
+  font-size: 20px;
+  text-align: center;
+  margin: 5vw auto;
+}
+main .grid-area .sec6 .lab-bot {
+  margin: 0 5vw;
+}
+main .grid-area .sec6 .lab-bot p:nth-child(1) {
+  text-align: right;
+}
+main .grid-area .sec6 .lab-bot p:nth-child(2) {
+  text-align: left;
+}
+main .grid-area .sec6 .lab-bot a {
+  display: block;
+  margin: 5vw auto;
+  text-align: center;
+}
+main .grid-area .sec7 {
+  background-color: #f8f8f4;
+  color: #191917;
+  height: 100vh;
+}
+main .grid-area .sec7 .smail-title {
+  margin: 5vw auto;
+  font-size: 20px;
+  text-align: center;
+}
+main .grid-area .sec7 .our-logo {
+  margin: 0 15vw;
+  gap: 1vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+main .grid-area .sec7 .our-logo a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  transform: scale(0.4);
+}
+main .grid-area .sec8 {
+  background-color: #f8f8f4;
+  color: #191917;
+  height: 100vh;
+}
+main .grid-area .sec8 .smail-title {
+  margin: 5vw auto;
+  font-size: 20px;
+  text-align: center;
+}
+main .grid-area .sec8 .txt-link {
+  margin: 0 15vw;
+  font-size: 55px;
+}
+main .grid-area .sec8 .txt-link a {
+  color: #191917;
+}
+main .grid-area .sec8 .txt-link a:hover {
+  color: #bb8d8d;
+}
