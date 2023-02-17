@@ -2,6 +2,7 @@
 html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .dp-tog {
@@ -35,24 +36,46 @@ a {
   border-radius: 50%;
   background-color: #f8f8f4;
   position: absolute;
-  transform: translate(-50%, -50%);
+  left: 0;
+  top: 0;
   z-index: 99999;
-}
-
-.cursor-grow {
-  transform: scale(2);
 }
 
 .mousemove {
   text-align: center;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border: 1px solid #bb8d8d;
   border-radius: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  z-index: 9999;
+}
+
+.scrollEvtL {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: 1s;
+}
+
+.scrollEvtR {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: 1s;
+}
+
+.scrollEvtB {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 1s;
+}
+
+.scrollEvt {
+  opacity: 0;
+  transition: 1s;
 }
 
 main .grid-area {
@@ -91,7 +114,7 @@ main .grid-area .sec1 .back-text .didot {
 main .grid-area .sec2 {
   z-index: 2;
   position: relative;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,6 +135,7 @@ main .grid-area .sec2 .trans-less {
   font-family: "Roboto", sans-serif;
   color: #bb8d8d;
   cursor: pointer;
+  margin-bottom: 200px;
 }
 main .grid-area .sec3 {
   position: relative;
@@ -166,6 +190,7 @@ main .grid-area .sec3 .mySwiper .swiper-wrapper .swip3 img {
 }
 main .grid-area .sec4 {
   margin: 100px auto;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -178,8 +203,6 @@ main .grid-area .sec4 .video {
   z-index: 1;
 }
 main .grid-area .sec4 .video .mousemove {
-  position: absolute;
-  z-index: 1;
   top: 15%;
   left: 0;
   transform: translateX(-50%);
@@ -222,6 +245,13 @@ main .grid-area .sec5 .concept-left {
   top: 0;
   left: 0;
 }
+main .grid-area .sec5 .concept-left a {
+  color: #f8f8f4;
+}
+main .grid-area .sec5 .concept-left a .mousemove {
+  bottom: 37%;
+  right: 15%;
+}
 main .grid-area .sec5 .concept-right {
   overflow: hidden;
   width: 50%;
@@ -231,9 +261,11 @@ main .grid-area .sec5 .concept-right {
 }
 main .grid-area .sec5 .concept-right .concept-title {
   text-align: center;
-  font-size: 15vw;
-  margin-bottom: 22.5vw;
+  font-size: 29vw;
+  margin-bottom: 10vw;
   font-family: "Bebas Neue", cursive;
+  line-height: 1.2em;
+  transform: translateY(-15%);
 }
 main .grid-area .sec5 .concept-right p {
   font-family: "Bebas Neue", cursive;
@@ -248,9 +280,12 @@ main .grid-area .sec5 .concept-right .txt-bot {
   line-height: 1.6;
   margin-bottom: 3vw;
 }
-main .grid-area .sec5 .concept-right a {
+main .grid-area .sec5 .concept-right .link-a {
+  height: 5vw;
+  display: block;
+}
+main .grid-area .sec5 .concept-right .link-a a {
   color: #bb8d8d;
-  padding-bottom: 3vw;
 }
 main .grid-area .sec6 .lab-top {
   position: relative;
@@ -264,7 +299,6 @@ main .grid-area .sec6 .lab-top .img-mouse {
   max-width: 530px;
 }
 main .grid-area .sec6 .lab-top .img-mouse .mousemove {
-  position: absolute;
   top: 70%;
   left: 0;
   transform: translate(-50%, -50%);
