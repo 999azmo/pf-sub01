@@ -2,14 +2,11 @@
 
 html {
   font-family: $Helvetica;
-  // background-color: $theme-color1;
-  // color: $theme-color2;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 .dp-tog {
   display: none;
-  // opacity: 0;
 }
 .didot {
   font-family: $didot;
@@ -52,26 +49,6 @@ a {
   justify-content: center;
   position: absolute;
   z-index: 9999;
-}
-
-.scrollEvtL {
-  opacity: 0;
-  transform: translateX(-10%);
-  transition: 1s;
-}
-.scrollEvtR {
-  opacity: 0;
-  transform: translateX(10%);
-  transition: 1s;
-}
-.scrollEvtB {
-  opacity: 0;
-  transform: translateY(100%);
-  transition: 1s;
-}
-.scrollEvt {
-  opacity: 0;
-  transition: 1s;
 }
 
 main {

@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <!-- js -->
@@ -17,7 +18,8 @@
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
     ></script>
-    <script defer src="./js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="./js/lib.js"></script>
     <script defer src="./js/index.js"></script>
   </head>
   <body>
@@ -66,7 +68,7 @@
           </h1>
         </article>
         <article class="sec2">
-          <p class="basic-txt good scrollEvtB">
+          <p class="basic-txt good" data-aos="fade-up" data-aos-duration="1000">
             WE ARE A <span class="underline">DIGITAL FASHION HOUSE</span> THAT
             MIXES TECHNOLOGY AND CREATIVITY
             <br />
@@ -84,11 +86,16 @@
             are only small pieces of the future where Nueno will lead your
             brand.
           </p>
-          <p class="trans-less scrollEvtB cs-scale" onclick="toggle()">
+          <p
+            class="trans-less"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            onclick="toggle()"
+          >
             <em class="didot">Re</em>ad more about us
           </p>
         </article>
-        <article class="sec3 scrollEvtR">
+        <article class="sec3" data-aos="fade-left" data-aos-duration="1000">
           <p class="front-text good">
             OUR <br />
             DIGITAL COLLECTION
@@ -130,7 +137,7 @@
             </div>
           </div>
         </article>
-        <article class="sec4 scrollEvtL">
+        <article class="sec4" data-aos="fade-right" data-aos-duration="1000">
           <p class="front new-text didot">NEW</p>
           <div class="video">
             <video
@@ -151,7 +158,7 @@
           <p class="col-text back didot">COLLECTION</p>
           <p class="col-text front didot">COLLECTION</p>
         </article>
-        <article class="sec5 scrollEvt">
+        <article class="sec5" data-aos="fade" data-aos-duration="1000">
           <div class="concept-left">
             <a href="#">
               <img src="./images/concept@1x.jpg" alt="concept" />
@@ -169,12 +176,12 @@
               <span>CONC</span>
               <span>EPT</span>
             </h2>
-            <p class="txt-mid scrollEvtB">
+            <p class="txt-mid" data-aos="fade-up" data-aos-duration="1000">
               DIGITAL FASHION IS A NEW CHAPTER
               <br />
               <em class="didot">DISCOVER</em> NUENO CONCEPT
             </p>
-            <p class="txt-bot scrollEvtB">
+            <p class="txt-bot" data-aos="fade-up" data-aos-duration="1000">
               THERE IS NOTHING MORE IMPORTANT THAN THE ACT OF PUSHING YOUR
               IMAGINATION FORWARD.
               <br />
@@ -186,7 +193,7 @@
               <br />
               EXPLORE THE FULL STORY OF CLOTHES THAT DON'T EXIST.
             </p>
-            <span class="link-a scrollEvtB">
+            <span class="link-a" data-aos="fade-up" data-aos-duration="1000">
               <a href="#"><em class="didot">Ex</em>plore Nueno Concept</a>
             </span>
           </div>
@@ -197,7 +204,8 @@
               <img
                 src="./images/header@1x.jpg"
                 alt="header"
-                class="lab-img scrollEvtL"
+                class="lab-img"
+                data-aos="fade-right"
               />
               <div class="mousemove">
                 <div class="mouse-inner">
@@ -207,7 +215,11 @@
                 </div>
               </div>
             </div>
-            <div class="lab-title scrollEvtR">
+            <div
+              class="lab-title"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <h2>
                 <span
                   >LA<br />
@@ -216,61 +228,87 @@
               </h2>
             </div>
           </div>
-          <div class="lab-mid good scrollEvtB">
+          <div class="lab-mid good" data-aos="fade-up" data-aos-duration="1000">
             DIGITAL EXPERIENCES FOR FASHION
             <br />
             <em class="didot">DISCOVER</em>
             NUENO LAB
           </div>
           <div class="lab-bot">
-            <p class="didot labR scrollEvtR">
+            <p class="didot" data-aos="fade-left" data-aos-duration="1000">
               WE MERGE THE <span class="good">DIGITAL</span>
               <br />
               POSSIBILITIES AND
               <br />THE NEEDS <em>OF</em> FASHION <br />BRANDS TO CREATE
             </p>
-            <p class="didot labL scrollEvtL">
+            <p class="didot" data-aos="fade-right" data-aos-duration="1000">
               <span class="good">NEW KINDS</span> <em>OF</em> EXPERIENCES.
               <br />
               <span class="icon-n">( n )</span>
             </p>
             <br />
-            <a href="#" class="labB scrollEvtB"
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
               ><em class="didot">Ex</em>plore Nueno Lab</a
             >
           </div>
         </article>
         <article class="sec7">
-          <h2 class="smail-title good scrollEvt title7">OUR HIGHLIGHTS</h2>
+          <h2 class="smail-title good" data-aos="fade" data-aos-duration="1000">
+            OUR HIGHLIGHTS
+          </h2>
           <div class="our-logo">
-            <a href="#"><img src="./images/vogue@2x.png" alt="logo" /></a>
-            <a href="#"><img src="./images/kmag@2x.png" alt="logo" /></a>
-            <a href="#"><img src="./images/newonce@2x.png" alt="logo" /></a>
-            <a href="#"><img src="./images/inn@2x.png" alt="logo" /></a>
-            <a href="#"><img src="./images/wp@2x.png" alt="logo" /></a>
-            <a href="#"><img src="./images/gazeta@2x.png" alt="logo" /></a>
-            <a href="#"><img src="./images/pismo@2x.png" alt="logo" /></a>
-            <a href="#"><img src="./images/chillizet@2x.png" alt="logo" /></a>
-            <a href="#"><img src="./images/natemat@2x.png" alt="logo" /></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
+              ><img src="./images/vogue@2x.png" alt="logo"
+            /></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
+              ><img src="./images/kmag@2x.png" alt="logo"
+            /></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
+              ><img src="./images/newonce@2x.png" alt="logo"
+            /></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
+              ><img src="./images/inn@2x.png" alt="logo"
+            /></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
+              ><img src="./images/wp@2x.png" alt="logo"
+            /></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
+              ><img src="./images/gazeta@2x.png" alt="logo"
+            /></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
+              ><img src="./images/pismo@2x.png" alt="logo"
+            /></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
+              ><img src="./images/chillizet@2x.png" alt="logo"
+            /></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1000"
+              ><img src="./images/natemat@2x.png" alt="logo"
+            /></a>
           </div>
         </article>
         <article class="sec8">
-          <h2 class="smail-title good scrollEvtB title8">OUR ARTICLES</h2>
+          <h2
+            class="smail-title good"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            OUR ARTICLES
+          </h2>
           <div class="txt-link didot">
-            <span class="txt1 scrollEvt">
+            <span data-aos="fade" data-aos-duration="1000">
               <a href="#"
                 >THE CLOTHES THAT DO<em>N'T</em> EXIST. WHAT IS
                 <em>DIGITAL</em> FASHION</a
               >
               <span class="slash">/</span>
             </span>
-            <span class="txt2 scrollEvt">
+            <span data-aos="fade" data-aos-duration="1000">
               <a href="#"
                 >HOW TO GET CLOSER TO CUSTOMERS? AR USED BY FASHION BRANDS.</a
               >
               <span class="slash">/</span>
             </span>
-            <span class="txt3 scrollEvt">
+            <span data-aos="fade" data-aos-duration="1000">
               <a href="#">VOGUE TAIWAN EXAMPLES.</a>
             </span>
           </div>

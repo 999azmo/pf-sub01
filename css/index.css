@@ -55,29 +55,6 @@ a {
   z-index: 9999;
 }
 
-.scrollEvtL {
-  opacity: 0;
-  transform: translateX(-10%);
-  transition: 1s;
-}
-
-.scrollEvtR {
-  opacity: 0;
-  transform: translateX(10%);
-  transition: 1s;
-}
-
-.scrollEvtB {
-  opacity: 0;
-  transform: translateY(100%);
-  transition: 1s;
-}
-
-.scrollEvt {
-  opacity: 0;
-  transition: 1s;
-}
-
 main .grid-area {
   margin: 0 auto;
   display: grid;
