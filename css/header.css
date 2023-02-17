@@ -18,10 +18,18 @@ header nav {
   position: relative;
   text-transform: uppercase;
 }
-header nav .logo {
+header nav .logo-sub {
+  font-family: "Bebas Neue", cursive;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+header nav .logo-main {
+  font-family: "Bebas Neue", cursive;
+  font-size: 14px;
+  letter-spacing: 3px;
   justify-self: center;
 }
-header nav .logo a {
+header nav .logo-main a {
   color: #f8f8f4;
 }
 header nav .menu-btn {
@@ -65,4 +73,15 @@ header nav .menu-btn {
 footer {
   background-color: #191917;
   color: #f8f8f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 4vw;
+}
+footer p .copy {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+footer p span {
+  font-size: 13px;
 }

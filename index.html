@@ -18,12 +18,15 @@
       src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
     ></script>
     <script defer src="./js/swiper.js"></script>
+    <script defer src="./js/index.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <p>digital fashion</p>
-        <h1 class="logo"><a href="#">nueno</a></h1>
+        <p class="logo-sub">digital fashion</p>
+        <h1 class="logo-main">
+          <a href="#">nuen<span class="didot">o</span></a>
+        </h1>
         <button class="menu-btn"></button>
         <div class="menu-main">
           <div class="close-area"></div>
@@ -70,20 +73,23 @@
             TO TAKE FASHION BEYOND ONLY-PHYSICAL EXPERIENCES.
             <span class="icon-n">( n )</span>
           </p>
-          <p class="add-txt good">
+          <p class="add-txt dp-tog">
             We have established Nueno Concept as the first Polish brand of
             clothes that don't exist & Nueno Lab to conduct digital experiments
             with fashion creators. We want to inspire you and pave the way for a
             digital fashion future.
             <br />
+            <br />
             Digitally tailored clothes, AR extended clothes, online trying-ons
             are only small pieces of the future where Nueno will lead your
             brand.
           </p>
-          <p class="trans-less"><em class="didot">Re</em>ad more about us</p>
+          <p class="trans-less cs-scale" onclick="toggle()">
+            <em class="didot">Re</em>ad more about us
+          </p>
         </article>
         <article class="sec3">
-          <p class="front-text">
+          <p class="front-text good">
             OUR <br />
             DIGITAL COLLECTION
           </p>
@@ -184,25 +190,27 @@
           </div>
         </article>
         <article class="sec6">
-          <div class="lab-title">
-            <h2>
-              <span
-                >LA<br />
-                B</span
-              >
-            </h2>
-          </div>
-          <div class="img-mouse">
-            <img src="./images/header@1x.jpg" alt="header" />
-            <div class="mousemove">
-              <div class="mouse-inner">
-                <em class="didot">Ex</em>plore
-                <br />
-                Nueno LAB
+          <div class="lab-top">
+            <div class="img-mouse">
+              <img src="./images/header@1x.jpg" alt="header" />
+              <div class="mousemove">
+                <div class="mouse-inner">
+                  <em class="didot">Ex</em>plore
+                  <br />
+                  Nueno LAB
+                </div>
               </div>
             </div>
+            <div class="lab-title">
+              <h2>
+                <span
+                  >LA<br />
+                  B</span
+                >
+              </h2>
+            </div>
           </div>
-          <div class="lab-mid">
+          <div class="lab-mid good">
             DIGITAL EXPERIENCES FOR FASHION
             <br />
             <em class="didot">DISCOVER</em>
@@ -210,19 +218,21 @@
           </div>
           <div class="lab-bot">
             <p class="didot">
-              WE MERGE THE <span class="ff-good">DIGITAL</span> POSSIBILITIES
-              AND THE NEEDS <em>OF</em> FASHION BRANDS TO CREATE
+              WE MERGE THE <span class="good">DIGITAL</span>
+              <br />
+              POSSIBILITIES AND
+              <br />THE NEEDS <em>OF</em> FASHION <br />BRANDS TO CREATE
             </p>
             <p class="didot">
-              <span class="ff-good">NEW KINDS</span> <em>OF</em> EXPERIENCES.
+              <span class="good">NEW KINDS</span> <em>OF</em> EXPERIENCES.
             </p>
             <span class="icon-n">( n )</span>
             <br />
-            <a href="#"><em>Ex</em>plore Nueno Lab</a>
+            <a href="#"><em class="didot">Ex</em>plore Nueno Lab</a>
           </div>
         </article>
         <article class="sec7">
-          <h2 class="smail-title">OUR HIGHLIGHTS</h2>
+          <h2 class="smail-title good">OUR HIGHLIGHTS</h2>
           <div class="our-logo">
             <a href="#"><img src="./images/vogue@2x.png" alt="logo" /></a>
             <a href="#"><img src="./images/kmag@2x.png" alt="logo" /></a>
@@ -236,8 +246,8 @@
           </div>
         </article>
         <article class="sec8">
-          <h2 class="smail-title">OUR ARTICLES</h2>
-          <div class="txt-link">
+          <h2 class="smail-title good">OUR ARTICLES</h2>
+          <div class="txt-link didot">
             <a href="#"
               ><span
                 >THE CLOTHES THAT DO<em>N'T</em> EXIST. WHAT IS
@@ -259,7 +269,7 @@
     </main>
     <footer>
       <p>
-        <span>&copy; 2023</span>
+        <span class="good copy">&copy; 2023</span>
         <span>Nueno All Rights Reserved.</span>
       </p>
       <p><span class="icon-n">( n )</span></p>

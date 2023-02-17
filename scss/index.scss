@@ -6,23 +6,38 @@ html {
   // color: $theme-color2;
   box-sizing: border-box;
 }
+.dp-tog {
+  display: none;
+  // opacity: 0;
+}
 .didot {
   font-family: $didot;
-  font-size: 20px;
 }
 .good {
   font-family: $good;
   letter-spacing: 1px;
-  font-size: 20px;
   text-transform: uppercase;
 }
 .icon-n {
   font-family: $didot;
-  font-size: 26px;
   font-style: italic;
+  text-transform: lowercase;
+  font-size: 20px;
 }
 a {
   text-decoration: none;
+}
+.cursor {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $theme-color2;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+.cursor-grow {
+  transform: scale(2);
 }
 .mousemove {
   text-align: center;
@@ -85,16 +100,24 @@ main {
         }
       }
       .add-txt {
-        display: none;
-        transition: 0.5s;
+        width: 40%;
+        padding: 25px 0 70px;
       }
       .trans-less {
         font-family: $Helvetica;
         color: $theme-color3;
+        cursor: pointer;
       }
     }
     .sec3 {
+      position: relative;
       .front-text {
+        position: absolute;
+        top: 0;
+        left: 200px;
+        z-index: 200;
+        font-size: 14px;
+        letter-spacing: 2px;
         text-align: right;
       }
       .mySwiper {
@@ -128,6 +151,13 @@ main {
           .swip1 {
             img {
               width: 40%;
+            }
+          }
+          .swip3 {
+            width: 100%;
+            img {
+              height: 100%;
+              object-fit: contain;
             }
           }
         }
@@ -222,26 +252,30 @@ main {
       }
     }
     .sec6 {
-      .lab-title {
-        width: 50%;
+      .lab-top {
         position: relative;
-        top: 0;
-        left: 50%;
-        z-index: 10;
-        h2 {
-          font-size: 30vw;
+        height: 200vh;
+        .img-mouse {
+          position: sticky;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+          max-width: 530px;
+          .mousemove {
+            position: absolute;
+            top: 70%;
+            left: 0;
+            transform: translate(-50%, -50%);
+          }
         }
-      }
-      .img-mouse {
-        position: sticky;
-        top: 0;
-        left: 50%;
-        max-width: 530px;
-        .mousemove {
+        .lab-title {
           position: absolute;
-          top: 70%;
-          left: 0;
-          transform: translate(-50%, -50%);
+          top: 0;
+          left: 60%;
+          z-index: 300;
+          h2 {
+            font-size: 30vw;
+          }
         }
       }
       .lab-mid {
@@ -251,6 +285,8 @@ main {
       }
       .lab-bot {
         margin: 0 5vw;
+        line-height: 0.9;
+        font-size: 55px;
         p:nth-child(1) {
           text-align: right;
         }
@@ -258,8 +294,10 @@ main {
           text-align: left;
         }
         a {
+          font-size: 16px;
+          color: $theme-color3;
           display: block;
-          margin: 5vw auto;
+          margin: 6vw auto;
           text-align: center;
         }
       }

@@ -4,26 +4,43 @@ html {
   box-sizing: border-box;
 }
 
+.dp-tog {
+  display: none;
+}
+
 .didot {
   font-family: "GFS Didot", serif;
-  font-size: 20px;
 }
 
 .good {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 1px;
-  font-size: 20px;
   text-transform: uppercase;
 }
 
 .icon-n {
   font-family: "GFS Didot", serif;
-  font-size: 26px;
   font-style: italic;
+  text-transform: lowercase;
+  font-size: 20px;
 }
 
 a {
   text-decoration: none;
+}
+
+.cursor {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #f8f8f4;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+.cursor-grow {
+  transform: scale(2);
 }
 
 .mousemove {
@@ -88,14 +105,24 @@ main .grid-area .sec2 .basic-txt .underline {
   background: linear-gradient(#bb8d8d, #bb8d8d) no-repeat 0 100%/100% 2px;
 }
 main .grid-area .sec2 .add-txt {
-  display: none;
-  transition: 0.5s;
+  width: 40%;
+  padding: 25px 0 70px;
 }
 main .grid-area .sec2 .trans-less {
   font-family: "Roboto", sans-serif;
   color: #bb8d8d;
+  cursor: pointer;
+}
+main .grid-area .sec3 {
+  position: relative;
 }
 main .grid-area .sec3 .front-text {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: 200;
+  font-size: 14px;
+  letter-spacing: 2px;
   text-align: right;
 }
 main .grid-area .sec3 .mySwiper .swiper-wrapper {
@@ -128,6 +155,14 @@ main .grid-area .sec3 .mySwiper .swiper-wrapper .swip0 p {
 }
 main .grid-area .sec3 .mySwiper .swiper-wrapper .swip1 img {
   width: 40%;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper .swip3 {
+  width: 100%;
+}
+main .grid-area .sec3 .mySwiper .swiper-wrapper .swip3 img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main .grid-area .sec4 {
   margin: 100px auto;
@@ -217,27 +252,31 @@ main .grid-area .sec5 .concept-right a {
   color: #bb8d8d;
   padding-bottom: 3vw;
 }
-main .grid-area .sec6 .lab-title {
-  width: 50%;
+main .grid-area .sec6 .lab-top {
   position: relative;
-  top: 0;
-  left: 50%;
-  z-index: 10;
+  height: 200vh;
 }
-main .grid-area .sec6 .lab-title h2 {
-  font-size: 30vw;
-}
-main .grid-area .sec6 .img-mouse {
+main .grid-area .sec6 .lab-top .img-mouse {
   position: sticky;
   top: 0;
   left: 50%;
+  transform: translate(-50%, 0);
   max-width: 530px;
 }
-main .grid-area .sec6 .img-mouse .mousemove {
+main .grid-area .sec6 .lab-top .img-mouse .mousemove {
   position: absolute;
   top: 70%;
   left: 0;
   transform: translate(-50%, -50%);
+}
+main .grid-area .sec6 .lab-top .lab-title {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  z-index: 300;
+}
+main .grid-area .sec6 .lab-top .lab-title h2 {
+  font-size: 30vw;
 }
 main .grid-area .sec6 .lab-mid {
   font-size: 20px;
@@ -246,6 +285,8 @@ main .grid-area .sec6 .lab-mid {
 }
 main .grid-area .sec6 .lab-bot {
   margin: 0 5vw;
+  line-height: 0.9;
+  font-size: 55px;
 }
 main .grid-area .sec6 .lab-bot p:nth-child(1) {
   text-align: right;
@@ -254,8 +295,10 @@ main .grid-area .sec6 .lab-bot p:nth-child(2) {
   text-align: left;
 }
 main .grid-area .sec6 .lab-bot a {
+  font-size: 16px;
+  color: #bb8d8d;
   display: block;
-  margin: 5vw auto;
+  margin: 6vw auto;
   text-align: center;
 }
 main .grid-area .sec7 {

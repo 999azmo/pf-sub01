@@ -17,7 +17,15 @@ header {
     height: 100%;
     position: relative;
     text-transform: uppercase;
-    .logo {
+    .logo-sub {
+      font-family: $good;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    .logo-main {
+      font-family: $good;
+      font-size: 14px;
+      letter-spacing: 3px;
       justify-self: center;
       a {
         color: $theme-color2;
@@ -66,4 +74,17 @@ header {
 footer {
   background-color: $theme-color1;
   color: $theme-color2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 4vw;
+  p {
+    .copy {
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    span {
+      font-size: 13px;
+    }
+  }
 }
