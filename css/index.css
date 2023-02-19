@@ -34,7 +34,7 @@ a {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: #f8f8f4;
+  background: #f8f8f4;
   position: absolute;
   left: 0;
   top: 0;
@@ -163,7 +163,7 @@ main .grid-area .sec3 .mySwiper .swiper-wrapper .swip3 {
 main .grid-area .sec3 .mySwiper .swiper-wrapper .swip3 img {
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 main .grid-area .sec4 {
   margin: 100px auto;
@@ -332,7 +332,7 @@ main .grid-area .sec7 .our-logo {
 }
 main .grid-area .sec7 .our-logo a img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 auto;
   display: block;
   transform: scale(0.4);
