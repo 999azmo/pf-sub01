@@ -1,3 +1,26 @@
+// 스크롤 헤더
+function navOnOff() {
+  const header = document.querySelector("header");
+  let navMove = (e) => {
+    if (e === "up") {
+      header.className = "";
+    } else if (e === "down") {
+      header.className = "scrollDown";
+    }
+  };
+  const prevScrollTop = 0;
+  document.addEventListener("scroll", () => {
+    const nextScrollTop = window.pageYOffset || 0;
+    if (nextScrollTop > prevScrollTop) {
+      navMove("down");
+    } else if (nextScrollTop < prevScrollTop) {
+      navMove("up");
+    }
+  });
+}
+navOnOff();
+
+// 커서
 function circleCursor() {
   const cursor = document.querySelector(".cursor");
 
@@ -12,6 +35,7 @@ function circleCursor() {
 }
 circleCursor();
 
+// 토글txt
 function toggle() {
   const moreBtn = document.querySelector(".trans-less");
   const moreTxt = document.querySelector(".add-txt");
