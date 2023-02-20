@@ -6,16 +6,7 @@ a {
 header {
   background-color: #191917;
   color: #f8f8f4;
-  width: 100%;
   height: 97px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: 1s;
-  z-index: 999;
-}
-header.scrollDown {
-  transform: translateY(-100%);
 }
 header nav {
   display: grid;
