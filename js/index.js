@@ -62,8 +62,17 @@ function ourArticles() {
       cursor.style.width = "300px";
       cursor.style.height = "300px";
       cursor.style.borderRadius = "0%";
-      cursor.style.background = `url(${hoverImg[i].img}) no-repeat 50% / cover`;
+      hoverImg.forEach((item) => {
+        cursor.style.background = `url(${item.img}) no-repeat 50% / cover`;
+      });
     });
+    hoverTxt[0].addEventListener("mouseover", () => {
+      cursor.style.background = `url(${hoverImg[0].img}) no-repeat 50% / cover`;
+    });
+    hoverTxt[1].addEventListener("mouseover", () => {
+      cursor.style.background = `url(${hoverImg[1].img}) no-repeat 50% / cover`;
+    });
+
     hoverTxt[i].addEventListener("mouseout", () => {
       cursor.style.width = "";
       cursor.style.height = "";
