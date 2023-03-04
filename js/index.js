@@ -1,4 +1,4 @@
-// 스크롤 헤더
+// 스크롤 헤더 *수정
 function navOnOff() {
   const header = document.querySelector("header");
   let navMove = (e) => {
@@ -22,14 +22,14 @@ navOnOff();
 
 // 커서
 function circleCursor() {
-  const cursor = document.querySelector(".cursor");
-  const body = document.querySelector("body");
+  const cursor = document.querySelector("#cursor");
 
-  body.addEventListener("mousemove", (e) => {
-    cursor.style.left = `${e.pageX}px`;
-    cursor.style.top = `${e.pageY}px`;
-    // console.log(e.clientX, e.clientY);
-    // cursor.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;
+  addEventListener("mousemove", (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    cursor.style.left = mouseX + "px";
+    cursor.style.top = mouseY + "px";
   });
 }
 circleCursor();
@@ -64,6 +64,7 @@ function ourArticles() {
       cursor.style.borderRadius = "0%";
       hoverImg.forEach((item) => {
         cursor.style.background = `url(${item.img}) no-repeat 50% / cover`;
+        cursor.style.opacity = `1`;
       });
     });
     hoverTxt[0].addEventListener("mouseover", () => {
@@ -78,6 +79,7 @@ function ourArticles() {
       cursor.style.height = "";
       cursor.style.borderRadius = "";
       cursor.style.background = "";
+      cursor.style.opacity = "";
     });
   }
 }

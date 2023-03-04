@@ -31,13 +31,15 @@ a {
 }
 
 .cursor {
+  position: fixed;
   width: 14px;
   height: 14px;
-  border-radius: 50%;
-  background: #f8f8f4;
-  position: absolute;
-  left: 0;
-  top: 0;
+  background-color: #fff;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+  pointer-events: none;
+  transition: width 0.2s, height 0.2s;
   z-index: 99999;
 }
 
