@@ -26,6 +26,19 @@ a {
   text-decoration: none;
 }
 
+.cursor {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+  pointer-events: none;
+  transition: width 0.2s, height 0.2s;
+  z-index: 99999;
+}
+
 .mousemove {
   text-align: center;
   width: 150px;
